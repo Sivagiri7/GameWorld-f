@@ -12,10 +12,10 @@ function AdminPanel() {
    useEffect(() => {
     const fetchData = async () => {
        try {
-         const inquiryRes = await axios.get("https://game-world-v2-w7e4.onrender.com/api/inquiries");
+         const inquiryRes = await axios.get("https://gameworld-b.onrender.com/api/inquiries");
          setInquiries(inquiryRes.data);
 
-         const userRes = await axios.get("https://game-world-v2-w7e4.onrender.com/api/auth/users");
+         const userRes = await axios.get("https://gameworld-b.onrender.com/api/auth/users");
          setUsers(userRes.data);
        } catch (err) {
          console.log(" Error fetching data:", err);
@@ -37,7 +37,7 @@ function AdminPanel() {
      try {
        if (editingIndex !== null) {
        const id = inquiries[editingIndex].id;
-         const res = await axios.put(`https://game-world-v2-w7e4.onrender.com/api/inquiries/${id}`, formData);
+         const res = await axios.put(`https://gameworld-b.onrender.com/api/inquiries/${id}`, formData);
          const updated = [...inquiries];
          updated[editingIndex] = res.data;
          setInquiries(updated);
@@ -61,7 +61,7 @@ function AdminPanel() {
    const handleDelete = async (index) => {
      const id = inquiries[index].id;
      try {
-       await axios.delete(`https://game-world-v2-w7e4.onrender.com/api/inquiries/${id}`);
+       await axios.delete(`https://gameworld-b.onrender.com/api/inquiries/${id}`);
        const filtered = inquiries.filter((_, i) => i !== index);
        setInquiries(filtered);
      } catch (err) {
@@ -72,7 +72,7 @@ function AdminPanel() {
    
    const handleDeleteUser = async (id) => {
      try {
-       await axios.delete(`https://game-world-v2-w7e4.onrender.com/api/auth/users/${id}`);
+       await axios.delete(`https://gameworld-b.onrender.com/api/auth/users/${id}`);
        setUsers(users.filter(user => user.id !== id));
      } catch (err) {
        console.error("Delete user error:", err);
