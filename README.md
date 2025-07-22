@@ -12,7 +12,7 @@ It includes an **Admin Panel** for managing users and inquiries.
 - **React.js**  
 - **React Router DOM**  
 - **Axios**  
-- **Tailwind CSS / Custom CSS**
+- **Custom CSS**
 
 ### Backend  
 - **Spring Boot (Java)**  
@@ -21,7 +21,7 @@ It includes an **Admin Panel** for managing users and inquiries.
 
 ### Deployment  
 - **Frontend**: Netlify  
-- **Backend**: Render / Railway
+- **Backend**: Render
 
 ---
 
@@ -75,8 +75,7 @@ mvn spring-boot:run
 
 ## 🌐 Deployment Links
 
-- **Frontend (Netlify)**: [Live Website](https://your-netlify-link.netlify.app)  
-- **Backend (Render / Railway)**: [API Endpoint](https://your-backend-link.onrender.com)
+- **Fullstack**: [Live Website](https://gameworld-v2.netlify.app/)  
 
 ---
 
@@ -96,12 +95,8 @@ mvn spring-boot:run
 ## 💬 Contact
 
 For any questions, contact:  
-📧 **deepakgameworld@gmail.com**
+📧 **sivagirideepak3007@gmail.com**
 
 ---
 
-## 📥 Clone the Repository
 
-```bash
-git clone https://github.com/your-username/gameworld-fullstack.git
-```
