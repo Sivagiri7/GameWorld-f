@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+🎮 GameWorld - Fullstack Website
+GameWorld is a Fullstack Web Application where users can register, log in, and explore various game collections.
+The website includes an Admin Panel to manage users and inquiries.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🛠️ Tech Stack
+Frontend
+React.js
 
-## Available Scripts
+React Router DOM
 
-In the project directory, you can run:
+Axios
 
-### `npm start`
+Tailwind CSS / Custom CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend
+Spring Boot (Java)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+RESTful API
 
-### `npm test`
+MySQL / Railway Free Database
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Deployment
+Frontend: Netlify
 
-### `npm run build`
+Backend: Render / Railway
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🌟 Features
+User Panel
+Responsive Design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Register & Login Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Form submission with confirmation message
 
-### `npm run eject`
+Protected Routes (Only logged-in users can access main content)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Admin Panel
+View Registered Users
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Delete Users
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Manage Inquiries
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🗄️ Database Structure
+Table Name	Fields
+users	id, name, email, password, role
+inquiries	id, user_id, message, created_at
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🚀 How to Run Locally
+Frontend (React)
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+Backend (Spring Boot)
+bash
+Copy
+Edit
+cd backend
+mvn clean install
+mvn spring-boot:run
+Database
+Use Railway / FreeSQLDatabase
