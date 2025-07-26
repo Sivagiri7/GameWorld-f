@@ -73,9 +73,10 @@ mvn spring-boot:run
 
 ---
 
-## 🌐 Deployment Links
+## 🌐 Live Demo
 
-- **Fullstack**: [Live Website](https://gameworld-v2.netlify.app/)  
+- **Fullstack**: [Live Website](https://gameworld-v2.netlify.app/)
+- ⚠️ Note: Backend is hosted on Render free plan and may sleep after inactivity. Please wait for a one or two minutes when first loading.
 
 ---
 
